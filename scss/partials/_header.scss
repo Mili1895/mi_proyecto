@@ -1,0 +1,37 @@
+header {
+    nav ul li a { /*Color, tamaño y fuente de links del navegador */
+        color: #73433F;
+        font-size: 1.5em;
+        font-family: Barlow;
+        font-weight: 800;
+        text-decoration: none;
+    }
+    .estilo .menu { /* Distribucion de links en INDEX */
+        display: flex;
+        gap: 0.5rem;
+        flex-grow: 2;
+        justify-content: flex-end;
+    }
+    .estilo ul li:hover a{
+        background-color: coral;
+        color: cornsilk;
+        transition: .3s;
+    }
+    .menu li { /* Margenes de links en INDEX */
+        margin: 3rem 6rem 0 2rem;
+    }
+    .logo {
+        flex-grow: 2;
+        margin: 0rem 7rem;
+        padding: 0 0 0 3rem;
+    }
+    .logo img {
+        width: 20vw;
+        max-height: 35vh;
+    }
+}
+
+
+
+
+

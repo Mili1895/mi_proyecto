@@ -1,0 +1,183 @@
+/* IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;600;700&display=swap');
+
+/* VARIABLES */
+@import "./utils/variables";
+
+/* GLOBAL */
+@import "./utils/animations";
+@import "./utils/normalize";
+@import "./utils/globals";
+
+/* PARTIALS */
+@import "./partials/header";
+@import "./partials/footer";
+
+/* PAGES */
+@import "./pages/aboutus";
+@import "./pages/benefits";
+@import "./pages/clothes";
+@import "./pages/contact";
+@import "./pages/galery";
+@import "./pages/services";
+
+#padre { /* Main */
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30rem 30rem;
+    gap: 2rem;
+    margin: 0 5rem 0 15rem;
+    align-items: center;
+}
+#padre {
+    img {
+        max-width: 110vw;
+        max-height: 110vh;
+        grid-row: 1/3;
+        animation-duration: 4s;
+        animation-name: inicioFoto;
+        animation-delay: 0s;
+    }
+    .parrafo { /* Posicion de COFFEE SHOP */
+        color: #D9644A;
+        font-family: Barlow;
+        font-size: 5.5em;
+        font-weight: 800;
+        letter-spacing: 0.3em;
+        align-self: end;
+        animation-duration: 4s;
+        animation-name: inicio;
+        animation-delay: 0s;
+    }
+    .sectionDos  { /* Posicion de SHOP + STORE */
+        align-self: start;
+        color: #73433F;
+        font-size: 4em;
+        font-family: Barlow;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .estilo .menu {
+        display: flex;
+        justify-content: start;
+        font-size: 0.8em;
+        margin: 0;
+    }
+    .logo {
+        margin: 0 2rem 0 3rem;
+    }
+    #padre {
+        margin: 0 6rem 0 6rem;
+    }
+    #padre img {
+        margin: 0 0 10rem 0;
+    }
+    #padre .parrafo {
+        font-size: 4.5em;
+    }
+    #padre .sectionDos h2 {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width:768px) {
+    #padre {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15rem 15rem 15rem;
+        gap: 1rem;
+    }
+    #padre img {
+        max-width: 80vw;
+        max-height: 80vh;
+        justify-self: center;
+        align-self: center;
+        margin: 2rem 0;
+    }
+    #padre .parrafo {
+        font-size: 4em;
+        justify-self: center;
+    }
+    #padre .sectionDos h2 {
+        font-size: 0.6em;
+    }
+    #padre .sectionDos {
+        justify-self: center;
+    }
+    .menu li {
+        display: flex;
+        justify-content: end;
+        font-size: 0.8em;
+        margin: 3rem 5rem 0 1rem;
+    }
+    .logo img {
+        width: 20vw;
+        max-height: 25vh;
+        margin: 0 2rem 0 -2rem;
+    }
+    .padreDos .sectionTres a img { 
+        max-width: 3vw;
+        max-height: 3vh;
+        margin: -1rem 0 10rem 0;
+    }
+    .padreDos .sectionTres { 
+        display: flex;
+        margin: 10rem 4rem 0 7rem;
+    }
+    .sectionTres h4 { 
+        color: #BF4141;
+        font-family: Barlow;
+        font-size: 1.5em;
+        font-weight: 500;
+        letter-spacing: 0.5em;
+        margin: 0 0 7rem 0;
+    }
+}
+@media screen and (max-width:576px) {
+    .estilo .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        font-size: 0.6em;
+        margin: 0 0 0 -35rem;
+        line-height: 0.1rem;
+    }
+    .logo img {
+        width: 20vw;
+        max-height: 25vh;
+        margin: 0 0 20rem 0;
+    }
+    #padre {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10rem 10rem 10rem;
+        gap: 1rem;
+    }
+    #padre .parrafo {
+        font-size: 3em;
+        justify-self: center;
+    }
+    #padre .sectionDos  {
+        font-size: 0.4em;
+    }
+    .padreDos .sectionTres a img { 
+        max-width: 2vw;
+        max-height: 2vh;
+        margin: -1rem 0 10rem 0;
+    }
+    .padreDos .sectionTres { 
+        display: flex;
+        margin: 10rem 4rem 0 7rem;
+    }
+    .sectionTres h4 { 
+        color: #BF4141;
+        font-family: Barlow;
+        font-size: 1em;
+        font-weight: 500;
+        letter-spacing: 0.5em;
+        margin: 0 0 7rem 0;
+    }
+}

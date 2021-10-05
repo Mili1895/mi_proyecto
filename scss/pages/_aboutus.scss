@@ -1,0 +1,29 @@
+.padreTres {
+    h1 { /* Titulo ABOUT US... tamaño - color - fuente - posicion */
+        color: $color;
+        font-family: $family;
+        font-size: $size;
+        font-weight: $weight;
+        letter-spacing: $pacing;
+        display: flex;
+        justify-content: center;
+        animation-duration: 2s;
+        animation-name: inicio;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+    }
+    h3 { /* Párrafo de presentación tamaño - color - fuente - posicion */
+        color:#D9644A;
+        font-family: $family;
+        font-size: 2em;
+        font-weight: 300;
+        letter-spacing: 0.3em;
+        text-align: center justify;
+        margin: 0 15rem;
+        padding: 4rem 0;
+        line-height: 2.2em;
+    }
+} 
+ 
+ 
+

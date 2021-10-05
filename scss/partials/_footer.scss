@@ -1,0 +1,22 @@
+.padreDos .sectionTres a img { /* Tamaños de iconos de redes sociales */
+    max-width: 5vw;
+    max-height: 5vh;
+    margin: -1rem 0 10rem 0;
+}
+.padreDos {
+    .sectionTres { /* Posicion de iconos de redes sociales en Index */
+        display: flex;
+        justify-content:space-evenly;
+        margin: 10rem 13.5rem 0 6rem;
+    }
+    h4 {
+        color: #BF4141;
+        font-family: Barlow;
+        font-size: 1.7em;
+        font-weight: 500;
+        letter-spacing: 0.5em;  
+    }
+}
+
+
+

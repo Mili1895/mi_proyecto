@@ -1,0 +1,61 @@
+/* ANIMACION DE TITULOS PRINCIPALES */
+@keyframes inicio {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+        color: #D9644A;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+@keyframes inicioDos {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(360deg)
+    }
+}
+@keyframes inicioTres {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(-360deg)
+    }
+}
+@keyframes inicioTamaño {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+        transform: scale(1,1.5)
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+@keyframes inicioFoto {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+        transform: scale(2)
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}

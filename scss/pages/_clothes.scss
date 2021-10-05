@@ -1,0 +1,71 @@
+h1 { /* Titulo OUR CLOTHES... tamaño - color - fuente - posicion */
+    color: $color;
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $pacing;
+    display: flex;
+    justify-content: center;
+    animation-duration: 2s;
+    animation-name: inicio;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;  
+}
+#ropa { /* Posicion del contenido de CLOTHES a traves de GRIDS */
+    width: 1130px;
+    margin: 0 5.5rem 0 11.5rem;
+    display: grid;
+    grid-template-columns: repeat(4,20vw);
+    grid-template-rows: 30vh 30vh 30vh;
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+}
+#ropa {
+    .ropaUno {
+        justify-self: center;
+        align-self: center;
+        .ropaUno__uno { /* Titulos principales tamaño - color - fuente */
+            color: #73433F;
+            font-family: Barlow;
+            font-size: 2.5em;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+        }
+    }
+    .ropaDos { /* Posicion de contenido .ropaDos */
+        justify-self: start;
+        align-self: center;
+        h3 { /* Contenido debajo de titulos principales tamaño - color - fuente - posicion */
+            color:#BF4141;
+            font-family: Barlow;
+            font-size: 1.5em;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            text-align: left justify;
+        }
+    }
+    .ropaTres { /* Posicion de contenido .ropaTres */
+        grid-column: span 4;
+        align-self: center;
+        h3 { /* Contenido debajo de titulos principales tamaño - color - fuente - posicion */
+            color:#BF4141;
+            font-family: Barlow;
+            font-size: 1.5em;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            text-align: left justify;
+        }
+    }
+}
+/* CARRUSELES DE CLOTHES */
+.container { /* Primer carrusel de shirts - hoodies - bennies - ubicacion */
+    width: 400px;
+    height: 400px;
+    margin: 0 200px 0 600px;
+}
+.containerDos { /* Segundo carrusel de Else (pins - llaveros - tazas) - ubicacion */
+    width: 350px;
+    height: 350px;
+    margin: 0 100px 0 800px; 
+}

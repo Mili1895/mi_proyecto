@@ -1,0 +1,84 @@
+#foto {
+    .padreCinco h1 { /* Titulo TAKE A LOOK... tamaño - color - fuente - posicion */
+        color: $color;
+        font-family: $family;
+        font-size: $size;
+        font-weight: $weight;
+        letter-spacing: $pacing;
+        display: flex;
+        justify-content: center;
+        animation-duration: 2s;
+        animation-name: inicio;
+        animation-iteration-count: infinite;
+        animation-delay: 0s; 
+    }
+    h2 { /* Subtitulos (h2) de seccion GALERY... tamaño - color - fuentes -posicion */
+        color:#73433F;
+        font-family: Barlow;
+        font-size: 2.5em;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        display: flex;
+        margin: 0 15rem;
+        padding: 4rem 0 2rem 0;
+    }
+    .tamaño img { /* Foto principal del espacio */
+        max-width: 75vw;
+        max-height: 75vh;
+        display: flex;
+        margin: 2rem 25rem 0 15rem;
+        animation-duration: 3s;
+        animation-name: inicioTamaño;
+        animation-delay: 0s;
+    }
+    .tamañoDos {
+        .comida { /* Posicion del contenido .comida */
+            display: flex;
+            justify-content: flex-start;
+            margin: 0 15rem;
+            padding: 4rem 0 2rem 0; 
+        }
+        img { /* Fotos de comida y bebida */
+            max-width: 31vw; 
+            max-height: 31vh;
+            margin: 0 3.7rem 0 15rem;
+            padding: 2rem 0;
+            animation-duration: 3s;
+            animation-name: inicioDos;
+            animation-delay: 0s; 
+        }
+    }
+    .tamañoTres img { /*Fotos de muñecos */
+        max-width: 30vw;
+        max-height: 30vh;
+        margin: 1rem 3rem 0 15rem;
+        animation-duration: 3s;
+        animation-name: inicioTres;
+        animation-delay: 0s;    
+    }
+    .tamañoCuatro {
+        img { /*Foto de libros y mangas */
+            max-width: 31vw; 
+            max-height: 31vh; 
+            margin: 0 -25rem 0 35rem;
+            padding: 2rem 0;
+            animation-duration: 3s;
+            animation-name: inicioDos;
+            animation-delay: 0s; 
+        }
+        .libro { /* Posicion del contenido .libro */
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 15rem;
+            padding: 4rem 0 2rem 0; 
+        }
+    }
+   
+}
+ 
+
+
+ 
+
+
+ 
